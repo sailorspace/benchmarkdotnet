@@ -9,7 +9,7 @@ namespace NBench.Tests.Performance
     {
         static int Main(string[] args)
         {
-            return NBenchRunner.Run<Program>();
+            return NBenchRunner.Run<Test>();
         }
     }
 }

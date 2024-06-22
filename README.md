@@ -11,3 +11,11 @@ like  return NBenchRunner.Run<Program>();
 
 to Test finally run the below:- 
  dotnet run -c Release
+
+
+e.g test with span<T> vs normal string manupulation results in
+
+| Method         | Mean      | Error     | StdDev    |
+|--------------- |----------:|----------:|----------:|
+| TestWithSpan   |  4.500 ns | 0.0432 ns | 0.0424 ns |
+| RunWithoutSpan | 23.847 ns | 0.1647 ns | 0.1375 ns |
